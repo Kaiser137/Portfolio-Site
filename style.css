@@ -1,5 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
+    background-color: #00ffff;
 }
 
 .container {
@@ -9,20 +10,39 @@ body {
 }
 
 .foto_perfil {
-    width: 80%;
+    width: 100%;
     height: auto;
     border-radius: 50%;
     vertical-align: middle; 
 }
 
+.foto_assina{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
 .title {
     text-align: center;
+    width: 75%;
+    margin: auto;
     margin-top: 50px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 5px 5px 1px red, 5px 5px 1px 1px black;
+    padding: 10px 10px;
 }
 
 .row {
     margin-top: 50px;
     margin-bottom: 50px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 10px 10px;
+    box-shadow: 10px 10px 1px red, 10px 10px 1px 2px black;
 }
 
 footer {
@@ -30,18 +50,35 @@ footer {
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    bottom: 0;
+    margin: 0 auto;
     width: 100%;
     position: fixed;
-    left: 0;
-    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: center;
 }
 
 .footer-bottom {
-    border-top: 2px solid #fff;
+    border-top: 2px solid #00ffff;
     padding-top: 10px;
     margin-top: 20px;
     font-size: 14px;
 }
+
  @media screen and (max-width: 768px) {
     .foto_perfil {
         text-align: center;
@@ -50,5 +87,37 @@ footer {
         justify-content: center;
         align-items: center;
     }
-    
+
+    .title{
+        width: 50%;
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    .row{
+        width: 75%;
+        margin: auto;
+        margin-top: 25px;
+        font-size: 12px;
+    }
+
+    .footer {
+        padding: 0;
+        padding-bottom: 10px;
+        justify-content: center;
+    }
+
+    .footer-content .right img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-bottom {
+        margin-top: 0px;
+        font-size: 12px;
+    }
  }
